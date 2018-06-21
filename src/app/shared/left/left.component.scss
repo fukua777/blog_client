@@ -1,0 +1,18 @@
+@import '../../style/global.scss';
+
+.app-left{
+    width: $left-box-width;
+    .title{
+        height: 120px;
+        background: black;
+        line-height: 120px;
+        color: white;
+    }
+    .name{
+        height: 200px;
+        border: solid 1px red;
+    }
+    .link{
+        height: 100px;
+    }
+}

@@ -1,0 +1,23 @@
+// 全局属性
+$content-box-width: 1300px;
+$left-box-width: 300px;
+$home-right-width: 1000px;
+
+// 全局样式
+.display-flex{
+    display: flex;
+}
+.text-align-center{
+    text-align: center;
+}
+.font-size-28{
+    font-size: 28px;
+}
+.mg-top-20{
+    margin-top: 20px;
+}
+
+.content-box{
+    width: $content-box-width;
+    margin: 0 auto;
+}

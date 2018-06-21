@@ -1,0 +1,19 @@
+@import '../../style/global.scss';
+
+.header-box{
+    height: 100px;
+    border-bottom: solid 1px red;
+    .header{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        .header-title{
+            width: $left-box-width;
+        }
+        .header-nav{
+            width: 300px;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
