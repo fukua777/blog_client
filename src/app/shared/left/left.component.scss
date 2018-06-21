@@ -3,16 +3,34 @@
 .app-left{
     width: $left-box-width;
     .title{
-        height: 120px;
+        height: 100px;
         background: black;
-        line-height: 120px;
+        line-height: 100px;
         color: white;
     }
     .name{
         height: 200px;
-        border: solid 1px red;
+        padding-top: 90px;
+        img{
+            width: 160px;
+        }
+        .desc{
+            margin-top: 22px;
+            color: #222;
+            font-weight: 600;
+        }
     }
     .link{
-        height: 100px;
+        width: 76%;
+        margin: auto;
+        justify-content: space-around;
+        .btn span{
+            display: block;
+            color: #333;
+        }
+        .btn span:nth-child(1){
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
     }
 }
