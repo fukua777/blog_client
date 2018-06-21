@@ -4,6 +4,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { KnowledgeComponent } from './knowledge/knowledge.component';
 
+import { ArticleComponent } from './knowledge/article/article.component';
+import { CollectComponent } from './knowledge/collect/collect.component';
+
 const routes: Routes = [
     {
         path: '',
@@ -16,7 +19,22 @@ const routes: Routes = [
     },
     {
         path: 'knowledge',
-        component: KnowledgeComponent
+        component: KnowledgeComponent,
+        children: [
+            {
+                path: '',
+                redirectTo: 'article',
+                pathMatch: 'full'
+            },
+            {
+                path: 'article',
+                component: ArticleComponent
+            },
+            {
+                path: 'collect',
+                component: CollectComponent
+            }
+        ]
     },
 ];
 

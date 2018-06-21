@@ -6,7 +6,7 @@ import { AppRouterModule } from './app-router.module';
 // 组件
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
-import { KnowledgeComponent } from './knowledge/knowledge.component';
+// import { KnowledgeComponent } from './knowledge/knowledge.component';
 
 // 模块
 import { SharedModule } from './shared/shared.module';
@@ -18,7 +18,7 @@ import { KnowledgeModule } from './knowledge/knowledge.module';
   declarations: [
     AppComponent,
     HeaderComponent,
-    KnowledgeComponent
+    // KnowledgeComponent
   ],
   imports: [
     BrowserModule,

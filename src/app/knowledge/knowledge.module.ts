@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 
 import { KnowledgeRouterModule } from './knowledge-router.module';
 
-// import { KnowledgeComponent } from './knowledge.component';
+import { KnowledgeComponent } from './knowledge.component';
 import { ArticleComponent } from './article/article.component';
 import { CollectComponent } from './collect/collect.component';
 
@@ -10,6 +10,6 @@ import { CollectComponent } from './collect/collect.component';
   imports: [
     KnowledgeRouterModule
   ],
-  declarations: [ ArticleComponent, CollectComponent ]
+  declarations: [KnowledgeComponent, ArticleComponent, CollectComponent]
 })
 export class KnowledgeModule { }
