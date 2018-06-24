@@ -2,4 +2,19 @@
 
 .home-right-box{
     width: $home-right-width;
+    padding-left: 24px;
+    .new-tip{
+        textarea{
+            resize: none;
+            width: 100%;
+        }
+    }
+    .list{
+        background: red;
+        margin-bottom: 20px;
+        padding: 20px;
+        p:nth-child(1){
+            margin-bottom: 20px;
+        }
+    }
 }

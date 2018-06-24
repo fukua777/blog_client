@@ -6,11 +6,6 @@ import { CollectComponent } from './collect/collect.component';
 
 const routes: Routes = [
     {
-        path: '',
-        redirectTo: '/article',
-        pathMatch: 'full'
-    },
-    {
         path: 'article',
         component: ArticleComponent
     },

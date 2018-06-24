@@ -1,3 +1,7 @@
-<p>
-  article works!
-</p>
+  <div *ngFor="let li of dataList">
+    <div>{{li.createtime}}</div>
+    <div>{{li.title}}</div>
+  </div>
+  <div [innerHTML]="dataDetail?.content">
+    <!-- {{dataDetail.content}} -->
+  </div>

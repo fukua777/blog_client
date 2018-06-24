@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 import { KnowledgeRouterModule } from './knowledge-router.module';
 
@@ -8,6 +9,7 @@ import { CollectComponent } from './collect/collect.component';
 
 @NgModule({
   imports: [
+    CommonModule,
     KnowledgeRouterModule
   ],
   declarations: [KnowledgeComponent, ArticleComponent, CollectComponent]

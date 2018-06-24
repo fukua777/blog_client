@@ -1,3 +1,10 @@
 <aside class="home-right-box">
-    <span>home right</span>
+    <div class="new-tip">
+        <textarea #textarea rows="12"></textarea>
+        <button (click)="publish(textarea)">发表</button>
+    </div>
+    <div class="list" *ngFor="let li of dataList">
+        <p>{{li.createtime}}</p>
+        <p>{{li.content}}</p>
+    </div>
 </aside>
