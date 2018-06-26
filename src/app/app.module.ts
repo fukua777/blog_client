@@ -27,8 +27,8 @@ import { KnowledgeModule } from './knowledge/knowledge.module';
     HttpClientModule,
     SharedModule,
     HomeModule,
-    AppRouterModule,
     KnowledgeModule,
+    AppRouterModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AppIntercerptor, multi: true }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+
+import { HomeRightService } from './home-right.service';
 
 @Component({
   selector: 'app-home-right',
@@ -9,25 +10,30 @@ import { HttpClient } from '@angular/common/http';
 export class HomeRightComponent implements OnInit {
   private dataList: Array<any>;
   constructor(
-    private http: HttpClient
+    private service: HomeRightService
   ) { }
 
   ngOnInit() {
-    this.get_list();
+      this.getList();
   }
   // 获取列表
-  public get_list() {
-    this.http.get('/home/getTipsList').subscribe( data => {
-      console.log(data);
-      this.dataList = data['data'];
-    });
+  public getList() {
+      this.service.get_list().subscribe( data => {
+          this.dataList = data['data'];
+      });
   }
-  // 发送
-  public publish(textarea) {
-    console.log(textarea.value);
-    this.http.post('/home/postTip', { content: textarea.value}).subscribe( data => {
-      console.log(data);
-    });
+  // 发布
+  publish(textarea) {
+      if (!textarea || !textarea.value) {
+            return;
+      }
+      this.service.publish(textarea).subscribe( data => {
+          if (data && data['status']) {
+              this.getList();
+              alert('发布成功');
+              textarea.value = null;
+          }
+      });
   }
 
 }

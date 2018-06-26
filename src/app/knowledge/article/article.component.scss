@@ -1,0 +1,15 @@
+.article{
+    margin: 0 30px;
+    .list{
+        padding: 0 8px;
+        font-size: 18px;
+        line-height: 3;
+        border-bottom: dashed 1px #333;
+        .createtime{
+            margin-right: 30px;
+        }
+        .title{
+            width: 600px;
+        }
+    }
+}

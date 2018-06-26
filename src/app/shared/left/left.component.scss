@@ -21,16 +21,18 @@
         }
     }
     .link{
-        width: 76%;
+        width: 100%;
         margin: auto;
-        justify-content: space-around;
-        .btn span{
-            display: block;
-            color: #333;
-        }
-        .btn span:nth-child(1){
-            margin-bottom: 10px;
-            font-weight: bold;
+        background: #e8e9ea;
+        .btn{
+            padding: 8px 0;
+            margin-left: 14px;
+            a{
+                display: inline-block;
+                img{
+                    width: 24px;
+                }
+            }
         }
     }
 }

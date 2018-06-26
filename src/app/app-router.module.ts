@@ -5,6 +5,8 @@ import { HomeComponent } from './home/home.component';
 import { KnowledgeComponent } from './knowledge/knowledge.component';
 
 import { ArticleComponent } from './knowledge/article/article.component';
+import { ArticleDetailComponent } from './knowledge/article-detail/article-detail.component';
+
 import { CollectComponent } from './knowledge/collect/collect.component';
 
 const routes: Routes = [
@@ -29,6 +31,10 @@ const routes: Routes = [
             {
                 path: 'article',
                 component: ArticleComponent
+            },
+            {
+                path: 'article/:id',
+                component: ArticleDetailComponent
             },
             {
                 path: 'collect',
