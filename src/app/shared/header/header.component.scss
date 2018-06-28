@@ -9,6 +9,10 @@
         align-items: center;
         .header-title{
             width: $left-box-width;
+            a{
+                display: inline-block;
+                width: 100%;
+            }
         }
         .header-nav{
             width: 300px;

@@ -20,7 +20,7 @@
             font-weight: 600;
         }
     }
-    .link{
+    .info{
         width: 100%;
         margin: auto;
         background: #e8e9ea;
@@ -33,6 +33,15 @@
                     width: 24px;
                 }
             }
+        }
+    }
+    .link{
+        font-size: 16px;
+        margin-top: 30px;
+        padding-left: 20px;
+        a{
+            padding-bottom: 6px;
+            border-bottom: solid 2px #333;
         }
     }
 }

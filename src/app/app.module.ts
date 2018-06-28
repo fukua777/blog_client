@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 import { AppRouterModule } from './app-router.module';
 import { AppIntercerptor } from './app.interceptor';
@@ -31,7 +32,8 @@ import { KnowledgeModule } from './knowledge/knowledge.module';
     AppRouterModule
   ],
   providers: [
-    { provide: HTTP_INTERCEPTORS, useClass: AppIntercerptor, multi: true }
+    { provide: HTTP_INTERCEPTORS, useClass: AppIntercerptor, multi: true },
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
   ],
   bootstrap: [AppComponent]
 })
