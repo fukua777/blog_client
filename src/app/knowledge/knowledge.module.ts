@@ -7,6 +7,9 @@ import { KnowledgeComponent } from './knowledge.component';
 import { ArticleComponent } from './article/article.component';
 import { CollectComponent } from './collect/collect.component';
 
+// 引入dom安全管道
+import { SanitizerDomPipe } from '../shared/pipe/sanitizer-dom.pipe';
+
 import { ArticleService } from './article/article.service';
 import { ArticleDetailComponent } from './article-detail/article-detail.component';
 
@@ -15,7 +18,7 @@ import { ArticleDetailComponent } from './article-detail/article-detail.componen
     CommonModule,
     KnowledgeRouterModule
   ],
-  declarations: [ KnowledgeComponent, ArticleComponent, CollectComponent, ArticleDetailComponent ],
+  declarations: [ KnowledgeComponent, ArticleComponent, CollectComponent, ArticleDetailComponent, SanitizerDomPipe ],
   providers: [
     ArticleService
   ]

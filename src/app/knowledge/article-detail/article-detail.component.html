@@ -3,5 +3,5 @@
       <h1>{{dataDetail?.title}}</h1>
       <h3>{{dataDetail?.createtime}}</h3>
   </div>
-  <p class="content" [innerHtml]="dataDetail?.content"></p>
+  <p class="content" [innerHtml]="dataDetail?.content | sanitizerDom"></p>
 </div>
