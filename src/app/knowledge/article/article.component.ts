@@ -19,7 +19,9 @@ export class ArticleComponent implements OnInit {
   // 获取列表
   getArticleList() {
       this.service.getArticleList().subscribe( data => {
-          this.dataList = data['data'];
+          if (data && data['status']) {
+            this.dataList = data['data'];
+          }
       });
   }
 
