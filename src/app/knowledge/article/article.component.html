@@ -1,6 +1,6 @@
 <div class="article">
   <div class="list display-flex" *ngFor="let li of dataList">
-    <div class="createtime">{{li.createtime}}</div>
+    <div class="createtime">{{li.createtime | momentPipe}}</div>
     <div class="title"><a [routerLink]="li.id">{{li.title}}</a></div>
     <div class="tag">{{li.tag}}</div>
   </div>

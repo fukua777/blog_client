@@ -4,7 +4,7 @@
         <button (click)="publish(textarea)">发表</button>
     </div>
     <div class="list" *ngFor="let li of dataList">
-        <p>{{li.createtime}}</p>
+        <p>{{li.createtime | momentPipe}}</p>
         <p>{{li.content}}</p>
     </div>
 </aside>

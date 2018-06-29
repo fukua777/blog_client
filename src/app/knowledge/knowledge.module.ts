@@ -1,14 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { SharedModule } from '../shared/shared.module';
 import { KnowledgeRouterModule } from './knowledge-router.module';
 
 import { KnowledgeComponent } from './knowledge.component';
 import { ArticleComponent } from './article/article.component';
 import { CollectComponent } from './collect/collect.component';
-
-// 引入dom安全管道
-import { SanitizerDomPipe } from '../shared/pipe/sanitizer-dom.pipe';
 
 import { ArticleService } from './article/article.service';
 import { ArticleDetailComponent } from './article-detail/article-detail.component';
@@ -16,9 +14,10 @@ import { ArticleDetailComponent } from './article-detail/article-detail.componen
 @NgModule({
   imports: [
     CommonModule,
+    SharedModule,
     KnowledgeRouterModule
   ],
-  declarations: [ KnowledgeComponent, ArticleComponent, CollectComponent, ArticleDetailComponent, SanitizerDomPipe ],
+  declarations: [ KnowledgeComponent, ArticleComponent, CollectComponent, ArticleDetailComponent],
   providers: [
     ArticleService
   ]
