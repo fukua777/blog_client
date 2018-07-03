@@ -1,7 +1,7 @@
 <aside class="home-right-box">
     <div class="new-tip">
         <textarea #textarea></textarea>
-        <button (click)="publish(textarea)">发表</button>
+        <button (click)="publish(textarea)">发布</button>
     </div>
     <div class="list" *ngFor="let li of dataList">
         <p>{{li.createtime | momentPipe}}</p>

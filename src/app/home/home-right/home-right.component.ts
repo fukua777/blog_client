@@ -8,7 +8,7 @@ import { HomeRightService } from './home-right.service';
   styleUrls: ['./home-right.component.scss']
 })
 export class HomeRightComponent implements OnInit {
-  private dataList: Array<any>;
+  public dataList: Array<any>;
   constructor(
     private service: HomeRightService
   ) { }
